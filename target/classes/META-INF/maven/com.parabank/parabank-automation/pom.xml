@@ -23,7 +23,6 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.9.0</version>
-    <scope>test</scope>
   </dependency>
 
   <!-- ExtentReports -->
@@ -46,6 +45,13 @@
     <artifactId>log4j-core</artifactId>
     <version>2.23.1</version>
   </dependency>
+  
+  <!-- FileUtils -->
+  <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.15.1</version>
+</dependency>
 </dependencies>
 
 <build>

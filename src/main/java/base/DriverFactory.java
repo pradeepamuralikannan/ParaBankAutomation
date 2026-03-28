@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+//MANAGES BROWSER LIFECYCLE
 
 //This Driver Factory class is used to manage WebDriver instances efficiently - especially for Parallel execution
 public class DriverFactory {
