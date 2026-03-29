@@ -17,7 +17,7 @@ public class ScreenshotUtils {
 
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		String fileName = testName + "_" + timeStamp + ".png";
-		String filePath = System.getProperty("User.dir") + "/test-output/Screenshots/" + fileName;
+		String filePath = System.getProperty("user.dir") + "/test-output/Screenshots/" + fileName;
 
 		File srcFile = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
 		File desFile = new File(filePath);
@@ -36,7 +36,7 @@ public class ScreenshotUtils {
 }
 
 /*
- * FileUtils comes from Apache Commons IO...It is not part of the Java standard library. It comes from the commons-io dependency.
+ * FileUtils is a class comes from Apache Commons IO...It is not part of the Java standard library. It comes from the commons-io dependency.
  * 
  * What FileUtils.copyFile() Actually Does Here? 
  * Without it, you'd have to write raw Java I/O streams to copy the screenshot from a temp location to your target folder — about 15 lines of boilerplate. 

@@ -15,7 +15,7 @@ public class ConfigReader {
 	static {
 		try {
 			FileInputStream fis = new FileInputStream(
-					System.getProperty("User.dir") + "src/test/resources/config.properties");
+					System.getProperty("user.dir") + "/src/test/resources/config.properties");
 			prop.load(fis);
 			fis.close();
 		} catch (IOException e) {
